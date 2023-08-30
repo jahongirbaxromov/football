@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://sportishka.com/uploads/posts/2022-09/1663173341_1-sportishka-com-p-neimar-1.jpg" alt="neymar"></div>
+      <div class="swiper-slide"><img src="https://pichold.ru/wp-content/uploads/2018/07/cristiano-ronaldo-real-madrid_1pfdgxah3q4io1rplb5mlct7ud.jpg" alt="ronaldo"></div>
+      <div class="swiper-slide"><img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2020/07/14/13/messi-new-barcelona-kit.png" alt="messi"></div>
+      <div class="swiper-slide"><img src="https://images5.alphacoders.com/120/thumb-1920-1200064.jpg" alt="benzema"></div>
+      <div class="swiper-slide"><img src="https://w.forfun.com/fetch/96/968cf3ba4912ba1d7716bd685f275ad2.jpeg" alt="salah"></div>
+      <div class="swiper-slide"><img src="https://sportishka.com/uploads/posts/2022-11/1667445881_8-sportishka-com-p-ibragimovich-futbolist-pinterest-8.jpg" alt="ibrahimovich"></div>
+      <div class="swiper-slide"><img src="https://cdn.livesport.ru/l/football/2022/02/16/pag_real_full/picture--original.jpg?1644970209" alt="mbappe"></div>
+      <div class="swiper-slide"><img src="https://i.eurosport.com/2021/03/10/3009082-61737368-2560-1440.jpg" alt="halaand"></div>
+      <div class="swiper-slide"><img src="https://photobooth.cdn.sports.ru/preset/news/c/ee/40904250e4d9aaf88feca0179708f.jpeg" alt="bellingham"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
